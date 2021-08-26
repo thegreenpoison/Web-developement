@@ -1,2 +1,2 @@
 # Web-developement
-HTML/CSS/JS
+HTML5/CSS3
