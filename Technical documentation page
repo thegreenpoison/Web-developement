@@ -1,0 +1,138 @@
+<style>
+#header{
+}
+#main-doc{
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  grid-template-rows:repeat(6, 1fr);
+  grid-template-areas:
+    "navbar main-section"
+    "nav-link para_1"
+    "nav-link para_2"
+    "nav-link para_3"
+    "nav-link para_4"
+    "nav-link para_5";
+}
+#navbar{
+  font-size:20px;
+  grid-area:navbar;
+  background:#C4C4C4;
+  padding:10px;
+  margin:10px;
+  border-style: outset;
+  border-width: 5px;
+  display:flex;
+  flex-direction:column;
+}
+.nav-link{
+  grid-area:nav-link;
+  margin:5px;
+}
+.main-section{
+  font-size:20px;
+  background:#C4C4C4;
+  padding:10px;
+  margin:10px;
+  border-style: outset;
+  border-width: 5px;
+}
+#description{
+  grid-area:main-section;
+}
+#para_1{
+  grid-area:para_1;
+}
+#para_2{
+  grid-area:para_2;
+}
+#para_3{
+  grid-area:para_3;
+}
+#para_4{
+  grid-area:para_4;
+}
+#para_5{
+  grid-area:para_5;
+}
+.code{
+  background:#000000;
+  color:#ffffff;
+}
+#footer{ 
+  background:#C4C4C4;
+  padding:10px;
+  margin:10px;
+  border-style: outset;
+  border-width: 5px;
+}
+@media (min-width:200px)
+{}
+</style>
+
+<html>
+  
+<header id="header">technical documentation
+</header>
+
+<main id="main-doc">
+  
+  <nav id="navbar">
+    <header>Technical Documentation Navigation</header>
+    <a class="nav-link" href="#description">description</a>
+    <a class="nav-link" href="#para_1">para 1</a>
+     <a class="nav-link" href="#para_2">para 2</a>
+     <a class="nav-link" href="#para_3">para 3</a>
+     <a class="nav-link" href="#para_4">para 4</a>
+     <a class="nav-link" href="#para_5">para 5</a>
+  </nav>
+  
+  <section class="main-section" id="description"><header>description</header></section>
+  
+  <section class="main-section" id="para_1">
+    <header>para 1</header>
+    <code class="code">sample code 1</code>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+  </section>
+  
+  <section class="main-section" id="para_2">
+    <header>para 2</header>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum
+    <ul>unordered list
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+    <code class="code">sample code 2</code>
+    </p>
+  </section>
+  
+  <section class="main-section" id="para_3">
+    <header>para 3</header>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <code class="code">sample code 3</code>
+  </section>
+  
+  <section class="main-section" id="para_4">
+    <header>para 4</header>
+    <p>lorem ipsum</p>
+    <code class="code">sample code 4</code>
+    <p>lorem ipsum</p>
+  </section>
+  
+  <section class="main-section" id="para_5">
+    <header>para 5</header>
+    <code class="code">sample code 5</code>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+  </section>
+   
+</main>
+  
+<footer id="footer">this page ends here!</footer>
+
+</html>
