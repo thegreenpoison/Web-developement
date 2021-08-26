@@ -1,0 +1,64 @@
+<style>
+#welcome-section{
+}
+#header{
+  height:100vh;
+  width:100vw;
+  background:#FFA077;
+  color:#771D1D;
+  text-align:center;
+  align-items:center;
+}
+#navbar{
+  position:fixed;
+  top:0px;
+  right:0px;
+  font-size:24px;
+}
+.nav-link{}
+#profile-link{}
+.project-tile{
+  text-align:center;
+}
+#projects{
+  text-align:center;
+}
+.text{color:black;}
+.subtext{color:blue;}
+@media (min-width:200px)
+{}
+</style>
+
+<html>
+  
+<section id="welcome-section">   
+    <header id="header">
+  <h1>hello world! this is my portfolio.</h1>
+      </header>
+  <navbar id="navbar">
+    <a class="nav-link" href="https://www.behance.net/thegreenpoison">creative</a>
+    <a class="nav-link" href="#projects">coding</a>
+       <a class="nav-link" id="profile-link" href="https://github.com/thegreenpoison" target="_blank">github</a>
+  </navbar>
+    </section>
+      
+   <section id="projects">
+     <h3 class="project-tile">project tile</h3>
+     
+     <h4 class="text">tribute page</h4>
+     <a href="https://codepen.io/thegreenpoison/pen/vYmwrRq" target="_blank"><h4 class="subtext">https://codepen.io/thegreenpoison/pen/vYmwrRq</a></h4>
+     
+     <h4 class="text">survey page</h4>
+     <a href="https://codepen.io/thegreenpoison/pen/VwbJzdr" target="_blank"><h4 class="subtext">https://codepen.io/thegreenpoison/pen/VwbJzdr</a></h4>
+     
+     <h4 class="text">product landing page</h4>
+     <a href="https://codepen.io/thegreenpoison/pen/GRmVPdO" target="_blank"><h4 class="subtext">https://codepen.io/thegreenpoison/pen/GRmVPdO</a></h4>
+     
+     <h4 class="text">technical documentation page</h4>
+     <a href="https://codepen.io/thegreenpoison/pen/XWgWGOZ" target="_blank"><h4 class="subtext">https://codepen.io/thegreenpoison/pen/XWgWGOZ</a></h4>
+     
+     <h4 class="text">personal portfolio page</h4>
+     <a href="https://codepen.io/thegreenpoison/pen/QWgwxBz" target="_blank"><h4 class="subtext">https://codepen.io/thegreenpoison/pen/QWgwxBz</a></h4>    
+   </section>
+
+</html>
