@@ -1,0 +1,97 @@
+<style>
+#main{
+  
+}
+#title{
+  text-align:center;
+  color:#3E3E47;
+  background: linear-gradient(180deg, #F984DB 0%, rgba(255, 255, 255, 0) 100%);
+}
+#description{
+  text-align:center;
+  font-size:20px;
+}
+#survey-form{
+  text-align:center; 
+  color:#3E3E47;
+  background: linear-gradient(0deg, #F984DB 0%, rgba(255, 255, 255, 0) 100%);
+}
+#name{font-size:16px; margin-top:10px; margin-bottom:10px;}
+#email{font-size:16px; margin-top:10px; margin-bottom:10px;}
+#number{font-size:16px; margin-top:10px; margin-bottom:10px;}
+#name-label{font-size:24px; margin-top:10px; margin-bottom:10px;}
+#email-label{font-size:24px; margin-top:10px; margin-bottom:10px;}
+#number-label{font-size:24px; margin-top:10px; margin-bottom:10px;}
+#dropdown{font-size:16px; margin-top:10px; margin-bottom:10px;}
+#skills{font-size:24px; margin-top:10px; margin-bottom:10px;}
+#certification{font-size:24px; margin-top:10px; margin-bottom:10px;}
+#submit{
+  background-color:pink;
+ border-radius:5%;
+  font-size:16px;
+  margin-top:10px;
+  height:auto;
+  border:5px solid black;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.text{
+   font-size:24px;
+  color:#3E3E47;
+}
+</style>
+
+<html>
+<body id="main"> 
+  <h1 id="title"><b>Survey Form</b></h1>
+  <p id="description"><U>short description about the topic</U></p>
+  
+  <form id="survey-form">
+    
+    <label id="name-label"><b>NAME</b></label><br>
+    <input type="text" id="name" name="name" placeholder="enter your name" required><br>
+    
+    <label id="email-label"><b>E-MAIL</b></label><br>
+    <input type="email" id="email" name="email" placeholder="enter your email" required><br>
+    
+    <label id="number-label"><b>Age</b></label><br>
+    <input type="number" id="number" name="number" placeholder="enter your age" min="0" max="100" required><br>
+    
+    <label class="text"><b>Select field</b></label><br>
+    <select id="dropdown" name="dropdown" placeholder="select your field" required>
+      <option name="dropdown" value="mechanical Engineer">mechanical engineer</option>
+      <option name="dropdown" value="computer engineer">computer engineer</option>
+      <option name="dropdown" value="electrical engineer">electrical engineer</option>
+      <option name="dropdown" value="civil engineer">civil engineer</option>
+      <option name="dropdown" value="electronics engineer">electronics engineer</option>
+    </select><br>
+ 
+    <label id="skills"><b>Best Skill</b></label><br>
+    <input type="radio" name="skills" value="HTML">
+<label for="skills">HTML</label><br>
+<input type="radio" name="skills" value="CSS">
+<label for="skills">CSS</label><br>
+<input type="radio" name="skills" value="JavaScript">
+<label for="skills">JavaScript</label><br>
+    
+    <label id="certification"><b>Certified from:</b></label><br>
+    <input type="checkbox" name="certification" value="coursera">
+<label for="certification">Coursera</label><br>
+<input type="checkbox" name="certification" value="freecodecamp">
+<label for="certification">freecodecamp</label><br>
+<input type="checkbox" name="certification" value="w3schools">
+<label for="certification">w3schools</label><br>
+    <input type="checkbox" name="certification" value="udemy">
+<label for="certification">udemy</label><br>
+      
+    <label class="text"><b>Enter your thoughts about coding</b></label><br>
+    <textarea name="thoughts"></textarea>
+
+  <button id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
+     
+</form>
+  
+</body>
+</html>
