@@ -1,0 +1,156 @@
+<style>
+
+#header{
+position:fixed;
+ top:0px;
+ left:0px;
+  z-index:1;
+width:100%;
+background-color:#F0EB7B;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+#header-img{
+  margin-left:10px;
+  height:60px;
+}
+#header-txt{
+  font-size:32px;
+  color: rgba(0, 0, 0, 0.75);
+}
+#nav-bar{
+}
+.nav-link{
+  background-color:#F0EB7B;
+  font-size:20px;
+  margin-left:20px;
+  margin-right:20px;
+}
+#main{background: #C8C99C;
+text-align:center;
+font-size:24px;
+color: rgba(0, 0, 0, 0.75);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;}
+#form{ margin-top:50px;
+  margin-bottom:10px;
+}
+#label{margin-top:10px;
+  margin-bottom:10px;
+font-color:#ffffff;
+font-size:24px;}
+#email{ margin-top:10px;
+  margin-bottom:10px;
+}
+#submit{ margin-top:10px;
+  margin-bottom:10px;
+}
+.card{
+  height:600px;
+  width:600px;
+  background-color:#82805C;
+  border-radius:4%;
+  margin-top:10px;
+  margin-bottom:10px;
+  box-shadow:20px 20px 20px;
+}
+#pictures{
+  height:540px;
+  width:540px;
+  background-color:#ffffff;
+  border-radius:4%;
+  margin-top:10px;
+  margin-left:30px;
+  display:grid;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-colums:1fr 1fr 1fr;
+  grid-template-areas:
+    "image image image"
+    "image image image"
+    "image image image";
+}
+.image{
+  object-fit:contain;
+  background-color:#ffffff;
+  border-radius:10%;
+  margin:2px;
+  width:170px;
+  height:170px;
+}
+#image-2{
+  object-fit:contain;
+  background-color:#ffffff;
+  border-radius:10%;
+  margin:10px;
+  width:540px;
+  height:540px;
+}
+#image-3{
+  object-fit:contain;
+  background-color:#ffffff;
+  border-radius:10%;
+  margin:10px;
+  width:540px;
+  height:540px;
+}
+#video{}
+@media(min-height:200px){
+  position: relative;
+  z-index:-1;
+  margin-bottom:10px;
+}
+#footer{width:100%;
+  height:30px;
+background-color:#F0EB7B;
+text-align:center;
+box-shadow:20px 20px 20px;
+  border-radius:5%;}
+</style>
+
+<html>
+  <header id="header">
+<img id="header-img" src="https://gist.githubusercontent.com/thegreenpoison/33cf079a5c855e9f30a29bae4b57a805/raw/f7f8df42fd14cc87891d22344bfff3e1738e9f49/sona_logo1.svg" alt="logo">
+<h1 id="header-txt">Sonachu Birthday Page</h1>
+<nav id="nav-bar">
+  <a class="nav-link" href="#pictures" target="_parent">pictures</a>
+  <a class="nav-link" href="#image-2" target="_parent">sketch</a>
+  <a class="nav-link" href="#image-3" target="_parent">paint</a>
+  <a class="nav-link" href="#video" target="_parent">video</a>
+  </nav>
+ </header>
+<body id="main">
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <label id="label"><p>enter email<p></label><br>
+   <input type="email" id="email" name="email" placeholder="enter email address here"><br>
+  <input type="submit" id="submit"><br>
+  </form>  
+  <div class="card">pictures
+  <div id="pictures">
+    <img class="image" src="https://lh3.googleusercontent.com/BPQSpxsaLeFhh-t18DPngTTRHrB-wd8hJ3XaIB4NiPvUHsUIvAZF5G0nQMQQEMyx0kpfwFxDUuPoG0W0eoDjVTcpliXmE2Z5HJvZsqxvq7SN9RceelObZol0L5qY1qUpi76kgYYXYQ=w600-h315-p-k" alt="image1">
+    <img class="image" src="https://lh3.googleusercontent.com/f4G8zx8fieWLHq2uq7nK-nCafvPoWX17Qof7MAN7DVspnB3CGUtImJHtaE0GH_AP_R7uBRoX1UX0QQpcrv7BxPAVraSTg_Y4iVSytvy_SGaJo5thf8O7V4SFeiy5UNDyDc47V6lJ5Q=w600-h315-p-k" alt="image2">
+    <img class="image" src="https://lh3.googleusercontent.com/kdqvn1Phph04zQBuq2LfmMIbe8zpEKeFIS2VWklhrSVAHJa8X673Np3d588nsRLyt8W42L_9oy5hhZ6iACO7RY87TxwuD2hXATyHHbK0qE6xJ9DvL3HAUDe6baaXOjNWdPe_2nklxw=w600-h315-p-k" alt="image3">
+    <img class="image" src="https://lh3.googleusercontent.com/gdzq7wHZ1xXsS0UGUnspJGNii0oQAw-Xiulagm-lmaNRHfyupCPcMtWCFloiGO3oUToOmXT2L1B0CXVgZBR5SnI4dp5mqCaKJz4t6Ew2keyZ2b5eo_s_UC2tvw2W6vfq5WFLYc1e-Q=w600-h315-p-k" alt="image4">
+    <img class="image" src="https://lh3.googleusercontent.com/WKZ35ew_Ugyv2p44g0jpbxu-zI8wt5WwlWSZZVD2N1Q-LcDI2k1Q_rwZvMLlCzpWwBogkBZzzd0BnGsorEp77j0UFloavmFhoKsx_zSu-Mx2IKJVJAhJCbrEKnYMoruybGX5rDeh_Q=w600-h315-p-k" alt="image5">
+    <img class="image" src="https://lh3.googleusercontent.com/PAbMb0whRUFoixMs3NoVaDGisH78DeOLRq0om_J22UJVpxEGACSy_vFas_yw89DM3rGXf3GP4DX-tLMbPVIfsSQab2YOc78uDfE3EsGmy8qDmPYdn2mQmOVonRol50tnEfnENKCHxA=w600-h315-p-k" alt="image6">
+    <img class="image" src="https://lh3.googleusercontent.com/ReAl6QhwEarLEopMjVU3G3-i9Fl-4VglfVEqLP15Fn2jlIiXhd4myr_68Fzir-nOgXehWJshhCi-Qx9fTUMZ4jzIs15LSaBKUawxYEq_W-A-J1Qflk9SoD86Ts_nFyjknopqrhwUZQ=w600-h315-p-k" alt="image7">
+    <img class="image" src="https://lh3.googleusercontent.com/t-x189pTIgQK7j-s1GyUBiYd0y-8AJ3AQpI8BPDD8dz2q3wwPHaX4yR--Dt6r1GcAaaTcJrRL7qcLJR0ai7tmxzyGDbJMndc84HcEpyD-VazpR1JBxWMdWC9Z3FBjr2r3rhoePsydQ=w2400" alt="image8">
+    <img class="image" src="https://lh3.googleusercontent.com/5OCcGgLkCDDy6rvakOLxarHOqN7WFyTsl1h87ddZ2Q3Pf56iWlZp2SvdsDDjDFS5iKeNZa5M3ZoffJlZpztLttsF5ZgtfIluP5Pju7NSVc9OJEXmhMm1izO9KsKTOq2pfFKfeLq-PA=w2400" alt="image9">
+  </div>
+  </div>
+<div class="card">sketch
+  <img id="image-2" src="https://lh3.googleusercontent.com/V_Wx1d1yFrPu-A0YnK6KkMDl2CPEErBkQaGJhjnyocEilRL6nmbrU1V_43slnBTfIadN0M408VXOlpenGK7zkrmWkUeFUtYi97ZIceJLLMM3RM4K3YUGqWLqdKKvN-zacX83WWMdoQ=w2400" alt="sketch">
+  </div>
+<div class="card">painting
+  <img id="image-3" src="https://lh3.googleusercontent.com/NaFxLdkc7v0vIm1uWA09x2CZJRhtVGa9v6EhLqOLuZ0aeT-OiZFKk9ymnvE9rniAGkIE40RSoAAMDwCGJ6WmZPfNU-hrtbi51L5V_U-Yw0vH03_FqeiGG_cga9wwUmIwjMN9IuibiA=w2400" alt="painting">
+  </div>
+<div class="card">video
+ <a href="https://drive.google.com/file/d/1iXdXgRyw3pflwQUqHabULTbak0KeCQce/view" >
+  <video id="video" width="550" height="550" controls><source src="https://drive.google.com/file/d/1iXdXgRyw3pflwQUqHabULTbak0KeCQce/preview" type="video/mp4">
+    video</video>
+  </a></div>
+    </body>
+    <footer id="footer">Wish you a very happy birthday, love you!</footer>
+    </html>
